@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15832499789",
+    "firebase_url": "https://whistalk-5461f.firebaseio.com",
+    "project_id": "whistalk-5461f",
+    "storage_bucket": "whistalk-5461f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15832499789:android:dc21c8da7526ef7fd07e04",
+        "android_client_info": {
+          "package_name": "com.bisbizkuit.whistalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15832499789-felj1mlo593ifqi2kdio2gsl76lmsoq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bisbizkuit.whistalk",
+            "certificate_hash": "be4e91af1c20e657bcdd0921afb72969af53f007"
+          }
+        },
+        {
+          "client_id": "15832499789-o88ma872g8a2mu4fjebpbh41jkit7lip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnv3DPDN_Cilaqi5vhlACoipJGQ5F-n9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15832499789-o88ma872g8a2mu4fjebpbh41jkit7lip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

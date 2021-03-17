@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteTitle"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_below="@+id/deleteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="@string/deleteAlertContent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/dialog_info">
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@color/colorWhite"
+            android:fontFamily="@font/finger_paint"
+            android:textStyle="bold"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/dialog_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@drawable/dialog_button_background"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/finger_paint"
+            android:text="@string/delete"/>
+    </LinearLayout>
+
+</RelativeLayout>

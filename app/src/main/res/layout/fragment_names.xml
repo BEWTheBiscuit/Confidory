@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.register.fragments.namesFrag"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="115dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/CreateUsername"
+            android:fontFamily="@font/finger_paint"
+            android:id="@+id/CreateUsername"
+            />
+
+        <EditText
+            android:id="@+id/usernameSignUp"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/CreateUsername"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/Username"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="15dp"
+            android:background="@drawable/signup_edittext"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConfirmName"
+            android:text="@string/confirm"
+            android:background="@drawable/background_disabledsignupbutton"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/usernameSignUp"
+            android:enabled="false"
+            android:clickable="false"
+            android:textAllCaps="false"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

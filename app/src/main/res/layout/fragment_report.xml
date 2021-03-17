@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPages.setting.reportFrag"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/reportBack"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:src="@drawable/ic_arrowback_brown"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportTxt"
+        android:text="@string/report"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_below="@+id/reportBack"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/finger_paint"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reportTxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/reportType"
+        android:layout_marginBottom="100dp"
+        />
+
+</RelativeLayout>

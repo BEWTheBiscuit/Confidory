@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPages.setting.settingFrag"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrowback_brown"
+        android:layout_margin="10dp"
+        android:id="@+id/backGeneralSenario"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/finger_paint"
+        android:id="@+id/settingTxt"
+        android:layout_centerHorizontal="true"
+        android:text="@string/setting"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="8dp"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack"
+        android:layout_below="@+id/settingTxt"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider3"
+        android:id="@+id/PrivacySenario"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/privacyTxt"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/privacy"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/privacyTxt">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/postPrivacy">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/showPost"
+                        android:textSize="18dp"
+                        android:paddingLeft="30dp"
+                        />
+
+                    <Switch
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/showPost"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bioPrivacy"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/postPrivacy">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/showBio"
+                        android:textSize="18dp"
+                        android:paddingLeft="30dp"
+                        />
+
+                    <Switch
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/showBio"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/followPrivacy"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/bioPrivacy">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/followStatus"
+                        android:textSize="18dp"
+                        android:paddingLeft="30dp"
+                        />
+
+                    <Switch
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/showFollow"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChatSenario"
+        android:visibility="gone"
+        android:layout_below="@+id/divider3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/chatTxt"
+            android:text="@string/chatText"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/chatTxt"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="@string/anonymousChat"
+                    android:id="@+id/anonymousChatTxt"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/anonymousChatTxt"
+                    android:id="@+id/anonymousChatSenario">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requestFollowerAnonymous"
+                        android:layout_marginTop="17dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/needRequestFollower"
+                            android:textSize="18dp"
+                            android:paddingLeft="30dp"
+                            />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/requestFromFollowerAnonymous"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requestFollowingAnonymous"
+                        android:layout_marginTop="17dp"
+                        android:layout_below="@+id/requestFollowerAnonymous">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/needRequestFollowing"
+                            android:textSize="18dp"
+                            android:paddingLeft="30dp"
+                            />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/requestFromFollowingAnonymous"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requestAcAnonymous"
+                        android:layout_marginTop="17dp"
+                        android:layout_below="@+id/requestFollowingAnonymous">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/needRequestStranger"
+                            android:textSize="18dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/requestFromGuestsAnonymous"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:id="@+id/nonAnonymousChatTxt"
+                    android:text="@string/nonAnonymousChat"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/anonymousChatSenario"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nonAnonymousChatTxt"
+                    android:id="@+id/nonAnonymousChatSenario">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requestFollowerNonAnonymous"
+                        android:layout_marginTop="17dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/needRequestFollower"
+                            android:textSize="18dp"
+                            android:paddingLeft="30dp"
+                            />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/requestFromFollowerNonAnonymous"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requestFollowingNonAnonymous"
+                        android:layout_marginTop="17dp"
+                        android:layout_below="@+id/requestFollowerNonAnonymous">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/needRequestFollowing"
+                            android:textSize="18dp"
+                            android:paddingLeft="30dp"
+                            />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/requestFromFollowingNonAnonymous"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requestGuestsNonAnonymous"
+                        android:layout_marginTop="17dp"
+                        android:layout_below="@+id/requestFollowingNonAnonymous">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/needRequestStranger"
+                            android:textSize="18dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/requestFromGuestsNonAnonymous"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider3"
+        android:id="@+id/generalSenario"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/senarioPrivacy"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/privacy"
+            android:textSize="20dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/senarioChat"
+            android:text="@string/chatText"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPrivacy"
+        android:text="@string/confirm"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:textColor="@color/colorTransparentWhite"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelPrivacy"
+        android:textColor="@color/colorBlack"
+        android:text="@string/cancel"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPages.post_details"
+    android:id="@+id/postDetail">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_arrowback_brown"
+        android:clickable="true"
+        android:id="@+id/postDetailBackButton" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/postDetailBackButton">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postDetailPostLayout">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/postRecyclerView"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/postCommentdivider"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/postDetailPostLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_background_transparentwhite" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/postDetailPostLayout"
+                android:id="@+id/commentRecyclerView"
+                android:padding="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noComment"
+                android:layout_below="@+id/postCommentdivider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:text="@string/noComment"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+<!-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTransparentWhite">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentDetailEdittext"
+            android:layout_margin="10dp"
+            android:background="@drawable/signup_edittext"
+            android:hint="@string/leaveComment"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/uploadComment"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/uploadComment"
+            android:src="@drawable/ic_arrow_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+<!-->
+</RelativeLayout>

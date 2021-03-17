@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/naviHome"
+        android:title=""
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/naviSearch"
+        android:title=""
+        android:icon="@drawable/ic_search"/>
+
+    <item android:id="@+id/naviUpload"
+        android:icon="@drawable/ic_upload"
+        android:title=""/>
+
+    <item android:id="@+id/naviChat"
+        android:icon="@drawable/ic_chat"
+        android:title="" />
+
+    <item android:id="@+id/naviProfile"
+        android:title=""
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

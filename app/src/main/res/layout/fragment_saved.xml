@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainPages.setting.savedFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:id="@+id/titleSaved"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/savedBack"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrowback_brown"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27dp"
+            android:text="@string/saved"
+            android:fontFamily="@font/finger_paint"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/savedTxt"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/savedPost"
+        android:layout_below="@+id/titleSaved"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/noPost"
+        android:visibility="gone"
+        android:id="@+id/noPostFoundSaved"/>
+
+</RelativeLayout>

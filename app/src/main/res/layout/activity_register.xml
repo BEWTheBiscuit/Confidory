@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.register.register">
+
+    <com.bisbizkuit.whistalk.SpecialClass.SwipeDisabledViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SignUpViewPager"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/cancelCross"
+        android:src="@drawable/ic_cancel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dotsLayout"
+        android:orientation="horizontal"
+        android:layout_marginBottom="55sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dots"
+            app:tabBackground="@drawable/selector_dots"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastPage"
+        android:text="@string/Back"
+        android:drawableLeft="@drawable/ic_arrow_back"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConfirmEmailOrPhoneNo"
+        android:text="@string/confirm"
+        android:background="@drawable/background_signupbutton"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/usernameSignUp"
+        android:enabled="true"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConfirmPassword"
+        android:text="@string/confirm"
+        android:background="@drawable/background_signupbutton"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/usernameSignUp"
+        android:enabled="true"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        android:text="@string/Register"
+        android:background="@drawable/background_signupbutton"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/usernameSignUp"
+        android:enabled="true"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:visibility="gone"/>
+
+</RelativeLayout>

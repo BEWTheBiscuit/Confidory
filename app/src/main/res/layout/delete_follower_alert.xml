@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleDeleteFollower"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="@string/deletingFollower" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/titleDeleteFollower"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmDeleteFollowerText"
+        android:text="@string/deleteFollowerText"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp"
+        android:layout_below="@+id/divider6"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/confirmDeleteFollowerText"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/dialog_cancelDeleteFollower"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/comment_edittext"
+            android:fontFamily="@font/finger_paint"
+            android:textStyle="bold"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/dialog_deleteFollower"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@drawable/dialog_button_background"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/finger_paint"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+
+</RelativeLayout>

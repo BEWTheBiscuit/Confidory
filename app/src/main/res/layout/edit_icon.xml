@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconEditTitle"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/editIconTitle"
+        android:fontFamily="@font/finger_paint"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultInApp"
+        android:textAllCaps="false"
+        android:background="@drawable/backing_number"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="13dp"
+        android:id="@+id/defaultIcon"
+        android:fontFamily="@font/finger_paint"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/custom"
+        android:textAllCaps="false"
+        android:background="@drawable/backing_number"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="13dp"
+        android:id="@+id/customIcon"
+        android:fontFamily="@font/finger_paint"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:background="@drawable/backing_number"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="13dp"
+        android:id="@+id/cancelIconEdit"
+        android:fontFamily="@font/finger_paint"/>
+
+</LinearLayout>

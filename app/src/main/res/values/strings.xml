@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Whistalk</string>
+
+    <string name="nextLine">\n</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="Create_ac">Create Account</string>
+    <string name="Back">Back</string>
+    <string name="Next">Next</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Search">Search</string>
+    <string name="noUser">No account is found.</string>
+    <string name="follow">Follow</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="following">FOLLOWING</string>
+    <string name="likes">LIKES</string>
+    <string name="followerLowerC">Follower</string>
+    <string name="followingLowerC">Following</string>
+    <string name="Users">USERS</string>
+
+    <string name="Register">Register</string>
+    <string name="Username">Username</string>
+    <string name="LastName">Last Name</string>
+    <string name="FirstName">First Name</string>
+    <string name="Password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="Email">Email</string>
+    <string name="confirmEmail">Confirm Email</string>
+    <string name="usernameExisted">This username is already used by someone else.</string>
+    <string name="usernameBlankSpace">The username should not contain blank space.</string>
+    <string name="firstnameAvailability">The first name is not available.</string>
+    <string name="lastnameAvailability">The last name is not available.</string>
+    <string name="emailExisted">This email is already used by someone else.</string>
+    <string name="emailWrongFormat">This email is not right in format.</string>
+    <string name="emailConfirmation">The confirmation email is not matching.</string>
+    <string name="passwordLength">The password has to contain at least 8 characters.</string>
+    <string name="passwordLetter">The password has to contain alphabetic letters.</string>
+    <string name="passwordNumber">The password has to contain numbers.</string>
+    <string name="passwordBlankSpace">The password should not contain blank space.</string>
+    <string name="passwordConfirmation">The confirmation password is not matching.</string>
+    <string name="Blanked">This information cannot be blanked.</string>
+    <string name="usernameInvalid">This username cannot be used.</string>
+    <string name="CreateUsername">Create an Username</string>
+    <string name="CreatePassword">Your Password...</string>
+    <string name="passwordCritics">
+        1. Must contain at least 8 characters\n2. Must contain at least 1 letter\n3. Must contain at least 1 number</string>
+    <string name="CreateFullName">Your Full Name...</string>
+    <string name="CreateEmail">Your Email...</string>
+    <string name="SignIn_Email">Email</string>
+    <string name="SignIn_password">Password</string>
+    <string name="TermOfPolicy_SignIn">By signing in, you agree our term of policy.</string>
+    <string name="TermOfPolicy_SignUp">By signing up, you agree our term of policy.</string>
+    <string name="confirm">Confirm</string>
+    <string name="errorSignInEmailInvalid">The account signed in with an email that has already been used.</string>
+
+    <string name="uploadText">What do you want to say for your day?</string>
+    <string name="uploadPost">Post</string>
+    <string name="uploadAnonymously">Hide</string>
+    <string name="publicViewable">Public</string>
+    <string name="blankTextUpload">There is no word. It cannot be posted.</string>
+
+    <string name="noPost">No post can be shown.</string>
+    <string name="noChat">No chat can be found.</string>
+
+    <string name="leaveComment">Leave a comment...</string>
+    <string name="chatMessage">Message...</string>
+    <string name="createGroupChat">Create Group</string>
+    <string name="noComment">No comment</string>
+    <string name="block">Block</string>
+    <string name="blockUpper">BLOCK</string>
+    <string name="unblock">Unblock</string>
+    <string name="blockedList">BLOCKED</string>
+    <string name="DeleteUpper">DELETE</string>
+    <string name="blockingUser">Blocking User...</string>
+    <string name="deleteFollower">Delete follower</string>
+    <string name="deletingFollower">Delete follower...</string>
+    <string name="chatRequestUpper">CHAT REQUEST</string>
+
+    <string name="report">Report</string>
+    <string name="delete">Delete</string>
+    <string name="setting">Setting</string>
+    <string name="saved">Saved</string>
+    <string name="deleteUser">Delete an account</string>
+    <string name="deletePost">Delete a post</string>
+    <string name="deleteComment">Delete a comment</string>
+    <string name="deleteAlertContent">Once you deleted, you cannot restore it.</string>
+    <string name="editProfile">Edit profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="editBio">Say for yourself</string>
+    <string name="logout">Logout</string>
+    <string name="privacy">Privacy</string>
+    <string name="showPost">Post</string>
+    <string name="showBio">Bio</string>
+    <string name="notification">Notification</string>
+    <string name="accept">ACCEPT</string>
+    <string name="requested">REQUESTED</string>
+    <string name="request">Requests...(+)</string>
+    <string name="requestText">Wants to be your backer...</string>
+    <string name="noContent">The post is not able to be shown...</string>
+    <string name="followStatus">Follow status</string>
+
+    <string name="cancelFollowingText">Are you sure about unfollowing this user?</string>
+    <string name="blockUserText">Are you sure about blocking this user?</string>
+    <string name="deleteFollowerText">Are you sure about deleting this follower?</string>
+    <string name="chatText">Chat</string>
+    <string name="anonymousChat">Anonymous Chat</string>
+    <string name="nonAnonymousChat">Non-anonymous Chat</string>
+    <string name="needRequestFollower">Request from followers</string>
+    <string name="needRequestFollowing">Request from following accounts</string>
+    <string name="needRequestStranger">Request from guests (accounts excluded from followers and following accounts)</string>
+
+    <string name="term_of_policy">Wylliam Cheng built the Confidory app as a Free app. This SERVICE is provided by Wylliam Cheng at no cost and is intended for use as is.\n\n
+
+This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+
+If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Confidory unless otherwise defined in this Privacy Policy.
+\n\n\n
+Information Collection and Use
+\n\n
+For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+
+The app does use third party services that may collect information used to identify you.
+\n\n
+Link to privacy policy of third party service providers used by the app:
+\n
+Google Play Services\n
+Firebase Analytics\n\n\n
+Log Data
+\n\n
+I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+\n\n\n
+Cookies
+\n\n
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device\'s internal memory.
+
+This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+\n\n\n
+Service Providers
+\n\n
+I may employ third-party companies and individuals due to the following reasons:
+\n
+To facilitate our Service;\n
+To provide the Service on our behalf;\n
+To perform Service-related services; or\n
+To assist us in analyzing how our Service is used.\n\n
+I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+\n\n\n
+Security
+\n\n
+I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+\n\n\n
+Links to Other Sites
+\n\n
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+\n\n\n
+Children’s Privacy
+\n\n
+These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
+\n\n\n
+Changes to This Privacy Policy
+\n\n
+I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+\n\n\n
+Contact Us
+\n\n
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at bisbizkuit@gmail.com.
+\n\n
+This privacy policy page was created at privacypolicytemplate.net and modified/generated by App Privacy Policy Generator</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+
+    <string name="custom">Custom</string>
+    <string name="unfollow">Unfollow...</string>
+    <string name="defaultInApp">Default</string>
+    <string name="editIconTitle">Change profile picture</string>
+
+</resources>

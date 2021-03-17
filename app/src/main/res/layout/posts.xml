@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/post_container"
+        android:elevation="10dp"
+        android:id="@+id/cardviewPost">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/noContent"
+            android:visibility="gone"
+            android:id="@+id/noContent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/postContent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/postUserIcon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernamePost"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/postUserIcon"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/finger_paint"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_postsetting"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:layout_marginRight="5dp"
+                android:id="@+id/postSetting"/>
+
+            <View
+                android:id="@+id/dividerPost"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/usernamePost"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dividerPost"
+                android:layout_marginTop="10dp"
+                android:id="@+id/postTextContent"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/postDate"
+                android:layout_below="@id/dividerPost"
+                android:layout_alignParentRight="true"
+                android:textSize="15dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_unliked"
+                android:layout_below="@+id/postTextContent"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:id="@+id/like"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_unsaved"
+                android:layout_below="@+id/postTextContent"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:id="@+id/save" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likedAmount"
+                android:layout_below="@+id/like"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/like"
+                android:layout_marginRight="10dp"
+                android:id="@+id/isPublic"
+                android:visibility="gone"
+                android:src="@drawable/ic_public"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/like"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/isPublic"
+                android:id="@+id/isAnonity"
+                android:visibility="gone"
+                android:src="@drawable/ic_confidential"/>
+
+            <include layout="@layout/comment_edittext"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/postLeaveComment"
+                android:layout_below="@+id/likedAmount"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

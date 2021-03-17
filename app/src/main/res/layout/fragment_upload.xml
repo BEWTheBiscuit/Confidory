@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPages.MainActivityFragment.uploadFrag">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/uploadText"
+        android:inputType="textMultiLine"
+        android:hint="@string/uploadText"
+        android:gravity="top"
+        android:textAlignment="gravity"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadPost"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorTransparentWhite"
+        android:text="@string/uploadPost"
+        android:clickable="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anonity"
+        android:text="@string/uploadAnonymously"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publicViewable"
+        android:text="@string/publicViewable"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
